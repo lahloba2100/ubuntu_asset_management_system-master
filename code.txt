@@ -1,0 +1,97 @@
+pip install virtualenv
+virtualenv env_asset_management_system   or   python -m venv env_asset_management_system
+env_asset_management_system\Scripts\activate
+pip install django
+cd env_asset_management_system
+django-admin startproject asset_management_system
+cd asset_management_system
+python manage.py runserver
+python manage.py startapp AddAssetInvoice
+python manage.py collectstatic
+
+
+
+python -m venv lms_test
+lms_test\Scripts\activate
+# pip install django
+cd lms_test
+
+django-admin startproject lms
+cd lms
+python manage.py runserver
+python manage.py startapp lms_app
+code .
+
+python manage.py collectstatic
+pip install pillow 
+
+
+
+
+
+
+python -m venv my_venv
+.\my_venv\Scripts\activate
+& C:/Users/windowsTen/Downloads/prjects/my_venv/Scripts/Activate.ps1
+
+python  -m pip install --upgrade pip
+pip install -r .\requirements.txt
+python setup.py install
+
+$env:SECRET_KEY="1234"
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
+
+
+python -m pip install --upgrade pip
+
+python -m venv myenv  # Create a virtual environment
+source myenv/bin/activate  # Activate the virtual environment
+pip install pillow  # Install Pillow within the virtual environment
+
+
+pip uninstall pillow
+
+
+pip install --no-binary :all: pillow
+
+
+
+
+
+Open a PowerShell session with administrator privileges. To do this, search for 
+"PowerShell" in the Windows Start menu, right-click on
+ "Windows PowerShell," and select "Run as administrator."
+
+Set-ExecutionPolicy RemoteSigned
+
+
+ & D:\MY_PC\PYTHON\PROJECT\my_venv\Scripts\activate.ps1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git remote add origin https://github.com/lahloba2100/asset_management.git

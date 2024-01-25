@@ -1,0 +1,36 @@
+sudo apt install python3-venv
+python3 -m venv ubuntu_myenv
+source ubuntu_myenv/bin/activate
+pip install django
+cd asset_management_system
+cd ~/Desktop/PYTHON/PROJECT/asset_management_system
+
+pip install django-extensions
+pip install arabic-reshaper
+pip install python-bidi
+pip install reportlab
+
+
+
+
+python manage.py runserver
+python manage.py makemigrations
+python manage.py migrate
+
+git config --global user.name "lahloba2100"
+git config --global user.email "lahloba2100@gmail.com"
+git remote add origin https://github.com/lahloba2100/asset_management.git
+
+git push -u origin main 
+
+
+
+
+git init  # لبدء مشروع Git جديد إذا لم يكن مشروع Git بالفعل
+git add .  # لإضافة جميع الملفات والتغييرات إلى Git
+git commit -m "أضف رسالة للالتزام"  # لالتزام التغييرات
+git branch -M main  # لتغيير اسم الفرع الافتراضي إلى "main"
+git remote add origin https://github.com/ahlobaa2100/asset_management_system.git
+
+
+

@@ -1,0 +1,102 @@
+<!-- في ملف base.html -->
+
+ <!-- Sidebar -->
+  <aside style="position: fixed;" class="sidebar main-sidebar sidebar-dark-primary elevation-4">
+    
+    <a href="#" class="brand-link">
+      <span class="brand-text font-weight-light">NOUVIL</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar main-sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <!-- يمكنك إضافة صورة المستخدم هنا -->
+        </div>
+        <div class="info">
+          <a href="#" class="d-block"><!-- اسم المستخدم هنا --></a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+          <li class="nav-item">
+            <a href="{% url 'index' %}" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>الرئيسية</p>
+            </a>
+          </li>
+
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                القائمة
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <!-- العناصر الفرعية هنا -->
+
+              <!-- مجموعة العمليات -->
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                  شاشة العمليات
+                </a>
+                <div class="dropdown-menu">
+                  <a href="/invoice-list/" class="dropdown-item">الفواتير</a>
+                  <a href="/destruction_list/" class="dropdown-item">الاهلاك</a>
+                  <a href="/asset_transfers/" class="dropdown-item">التحويل</a>
+                </div>
+              </li>
+
+              <!-- مجموعة الضبط -->
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                  شاشة الضبط
+                </a>
+                <div class="dropdown-menu">
+                  <a href="/systemadditiontax-list/" class="dropdown-item">ضريبة الاضافة</a>
+                  <a href="/systemminustax-list/" class="dropdown-item">ضريبة الخصم</a>
+                  <a href="/systemexpensescost-list/" class="dropdown-item">المصروفات</a>
+                  <a href="/group-list/" class="dropdown-item">اضافة تصنيف الاصول</a>
+                  <a href="/branch-list/" class="dropdown-item">اضافة الفروع</a>
+                </div>
+              </li>
+
+              <!-- مجموعة التقارير -->
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                  شاشة التقارير
+                </a>
+                <div class="dropdown-menu">
+                  <a href="/asset_report/" class="dropdown-item">تقرير الاصول</a>
+                  <a href="/destruction_report/" class="dropdown-item">تقرير الاهلاك</a>
+                </div>
+              </li>
+
+              <!-- مجموعة المستخدمين والصلاحيات -->
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                  شاشة المستخدمين والصلاحيات
+                </a>
+                <div class="dropdown-menu">
+                  <a href="/signup/" class="dropdown-item">تسجيل مستخدم</a>
+                  <a href="/change-password/" class="dropdown-item">تغيير كلمة السر</a>
+                  <a href="/logout/" class="dropdown-item">تسجيل الخروج</a>
+                  <a href="/user-list/" class="dropdown-item">حذف مستخدم</a>
+                  <a href="/igrant_permissions/" class="dropdown-item">الصلاحيات</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
